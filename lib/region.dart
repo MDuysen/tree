@@ -35,7 +35,40 @@ class _RegoionState extends State<Regoion> {
                           borderRadius: BorderRadius.all(Radius.circular(30)))),
                   Text('Парк Жастар,Амфитеатр'),
                   Text(
-                      'Флаг,поднятый на высоту 92 метра,установлен на флагштоке,в "Этноауле",нового парка "Жастар"')
+                      'Флаг,поднятый на высоту 92 метра,установлен на флагштоке,в "Этноауле",нового парка "Жастар"'),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('100',
+                              style:
+                                  TextStyle(fontSize: 20, color: Colors.green)),
+                          Text('деревьев посажено')
+                        ],
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('3000 тг',
+                              style:
+                                  TextStyle(fontSize: 20, color: Colors.green)),
+                          Text('стоимость одного дерево')
+                        ],
+                      )
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        '12 тонн',
+                        style: TextStyle(fontSize: 20, color: Colors.green),
+                      ),
+                      Text('кислорода будет произведено')
+                    ],
+                  )
                 ],
               ),
               padding: const EdgeInsets.all(16),
